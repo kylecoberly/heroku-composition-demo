@@ -1,0 +1,12 @@
+.ConfigSection {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.ConfigSection h2 {
+  color: hsl(280, 40%, 45%);
+}
+
+.ConfigSection ul {
+  list-style: none;
+}

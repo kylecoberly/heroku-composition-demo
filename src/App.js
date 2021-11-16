@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import ConfigSection from "./ConfigSection"
+import AppInformation from "./AppInformation"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ConfigSection
+        heading="App Information"
+        description="Config vars change the way your app whatever"
+        detail=<AppInformation />
+      /> 
+      <ConfigSection
+        heading="App Information"
+        description="Config vars change the way your app whatever"
+        detail=<p>Hi!</p>
+      /> 
     </div>
   );
 }
